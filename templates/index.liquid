@@ -157,6 +157,35 @@
 
     <!-- end bespoke frontpage collection -->
 
+    <!-- bespoke featured linklist -->
+
+<div class="bespoke-featured-links widgets">
+
+  <h3>
+
+    {{ linklists.featured-homepage.title | escape }}
+
+  </h3>
+
+  <ul>
+
+  {% for link in linklists.featured-homepage.links %}
+
+  <li>
+
+    <a href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
+
+    </li>
+
+  {% endfor %}
+
+  </ul>
+
+</div>
+
+
+    <!-- end bespoke featured linklist -->
+
 
   {% elsif widget_order == 'b' %}
 
